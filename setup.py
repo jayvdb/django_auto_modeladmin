@@ -200,7 +200,8 @@ setup(
     install_requires=[
         # eg:
         #   "six", or "six>=1.7",
-        "Django>=2.0"
+        "Django>=2.0",
+        "django-nested-admin",
     ],
 
     # List additional groups of dependencies here (e.g. development
