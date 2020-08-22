@@ -15,9 +15,7 @@ from setuptools import setup, find_packages
 from os.path import abspath, basename, dirname, join, splitext
 import re
 
-
 HERE = abspath(dirname(__file__))
-NAME = basename(HERE)
 
 
 def read(*parts):
@@ -47,7 +45,7 @@ setup(
     # https://packaging.python.org/specifications/core-metadata/#name
     #
     # Required
-    name=NAME,
+    name='django-auto-modeladmin',
 
     # Follow SemVer standard.
     #
@@ -59,7 +57,7 @@ setup(
     # https://packaging.python.org/en/latest/single_source_version.html
     #
     # Required
-    version=find_version("src", NAME, "__init__.py"),
+    version=find_version("src", "django_auto_modeladmin", "__init__.py"),
 
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
@@ -100,7 +98,7 @@ setup(
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
     #
     # Optional
-    url="https://github.com/alexseitsinger/{}".format(NAME),
+    url="https://github.com/alexseitsinger/django-auto-modeladmin",
 
     # This should be your name or the name of the organization which owns the
     # project.
@@ -152,10 +150,6 @@ setup(
     keywords=[
         # eg:
         #   "sample", "test"
-    ],
-
-    py_modules=[
-        splitext(basename(path))[0] for path in glob("src/*.py")
     ],
 
     # You can just specify package directories manually here if your project is
