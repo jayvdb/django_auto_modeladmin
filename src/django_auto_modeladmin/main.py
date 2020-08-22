@@ -27,7 +27,7 @@ def create_model_admin_inline(model):
     return type(name, bases, attrs)
 
 
-def create_model_admin(model, config=None):
+def create_model_admin(model, config={}):
     """ Dynamically generate ModelAdmin classes for installed models.
         Display the form field based on the field name used.
         https://docs.djangoproject.com/en/1.10/ref/contrib/admin/#django.contrib.admin.ModelAdmin.fieldsets
